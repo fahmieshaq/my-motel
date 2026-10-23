@@ -21,6 +21,8 @@ public class Room {
     @JoinColumn(name="hotel_id", nullable = false)
     private Hotel hotel;
 
+
+    // Random comment
     @OneToMany(mappedBy = "room", fetch = FetchType.LAZY)
     private List<Booking> bookings;
 
