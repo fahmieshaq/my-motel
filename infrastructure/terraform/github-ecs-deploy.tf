@@ -43,7 +43,7 @@ data "aws_iam_policy_document" "github_deployment_trust" {
 
       values = [
         #"repo:fahmieshaq@22756125/my-hotel@1411763878:environment:${each.value.environment}"
-        "repo:${local.github_repository}:environment:${each.value.environment}"
+        "repo:fahmieshaq@22756125/my-motel@1431606799:environment:${each.value.environment}"
       ]
     }
   }
