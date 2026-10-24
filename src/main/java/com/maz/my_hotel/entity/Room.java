@@ -17,6 +17,7 @@ public class Room {
     @Column(nullable = false)
     private BigDecimal price;
 
+    // another comment
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="hotel_id", nullable = false)
     private Hotel hotel;
